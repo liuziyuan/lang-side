@@ -63,10 +63,10 @@ func HelloWorld(cxt cookoo.Context, params *cookoo.Params) (interface{}, cookoo.
 
 ```
 ***
-## Setup http proxy
+## Setup git http proxy
 >If you are in china, please run lantern or other proxy application, and get the IP and port, the port is not fixed.  
 Then, we can get golang any package!
-### Setting: 
+### Setting git proxy: 
 
 ```
 git config --global http.proxy http://127.0.0.1:1080
@@ -75,13 +75,13 @@ git config --global http.proxy 'socks5://127.0.0.1:1080'
 git config --global https.proxy 'socks5://127.0.0.1:1080'
 ```
 
-### Unsetting:
+### Unsetting git proxy:
 ```
 git config --global --unset http.proxy
 git config --global --unset https.proxy
 ```
 
-### Look at current proxy
+### Look at current git proxy:
 ```
 git config --global http.proxy
 ```
