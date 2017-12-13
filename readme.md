@@ -4,8 +4,9 @@ Package Management for Golang https://github.com/Masterminds/glide
 
 ***
 ## Setup go workspace
->Default, the gvm have a global path, if you set the local path, the local path will be used first.  
-Please ensure that the vscode-go plug-in is installed on the global path
+>Default, the gvm have a global path, if you setted  local path, the local path will be used first.  
+Please ensure that the vscode-go extension is installed on the global path.
+
 ```
 mkdir your_go_workspace
 cd your_go_workspace
@@ -86,3 +87,25 @@ git config --global http.proxy
 ```
 
 ### How to use proxy to get vscode-go extension depends on
+
+step1: Set git proxy, refer to the previous section.
+
+step2: open an ternimal, refer to https://github.com/Microsoft/vscode-go/wiki/Go-tools-that-the-Go-extension-depends-on
+```
+go get -u -v github.com/ramya-rao-a/go-outline
+go get -u -v github.com/acroca/go-symbols
+go get -u -v github.com/nsf/gocode
+go get -u -v github.com/rogpeppe/godef
+go get -u -v golang.org/x/tools/cmd/godoc
+go get -u -v github.com/zmb3/gogetdoc
+go get -u -v github.com/golang/lint/golint
+go get -u -v github.com/fatih/gomodifytags
+go get -u -v github.com/uudashr/gopkgs/cmd/gopkgs
+go get -u -v golang.org/x/tools/cmd/gorename
+go get -u -v sourcegraph.com/sqs/goreturns
+go get -u -v github.com/cweill/gotests/...
+go get -u -v golang.org/x/tools/cmd/guru
+go get -u -v github.com/josharian/impl
+go get -u -v github.com/haya14busa/goplay/cmd/goplay
+```
+
