@@ -2,6 +2,7 @@ Go Version Manager https://github.com/moovweb/gvm
 
 Package Management for Golang https://github.com/Masterminds/glide
 
+***
 ## Setup go workspace
 ```
 mkdir your_go_workspace
@@ -17,22 +18,6 @@ glide get github.com/Masterminds/cookoo
 vim hello.go
 glide rebuild
 go run hello.go
-```
-
-## Setup http proxy
-### setting: 
-(if you are in china, please run lantern or other proxy application, and get the IP and port, the port is not fixed.)
-```
-git config --global http.proxy http://127.0.0.1:1080
-git config --global https.proxy https://127.0.0.1:1080
-git config --global http.proxy 'socks5://127.0.0.1:1080'
-git config --global https.proxy 'socks5://127.0.0.1:1080'
-```
-
-### unsetting:
-```
-git config --global --unset http.proxy
-git config --global --unset https.proxy
 ```
 
 hello.go
@@ -73,4 +58,25 @@ func HelloWorld(cxt cookoo.Context, params *cookoo.Params) (interface{}, cookoo.
 	return true, nil
 }
 
+```
+***
+## Setup http proxy
+### setting: 
+(if you are in china, please run lantern or other proxy application, and get the IP and port, the port is not fixed.)
+```
+git config --global http.proxy http://127.0.0.1:1080
+git config --global https.proxy https://127.0.0.1:1080
+git config --global http.proxy 'socks5://127.0.0.1:1080'
+git config --global https.proxy 'socks5://127.0.0.1:1080'
+```
+
+### unsetting:
+```
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
+
+### look at current proxy
+```
+git config --global http.proxy
 ```
