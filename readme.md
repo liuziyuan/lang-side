@@ -19,6 +19,22 @@ glide rebuild
 go run hello.go
 ```
 
+## Setup http proxy
+### setting: 
+(if you are in china, please run lantern or other proxy application, and get the IP and port, the port is not fixed.)
+```
+git config --global http.proxy http://127.0.0.1:1080
+git config --global https.proxy https://127.0.0.1:1080
+git config --global http.proxy 'socks5://127.0.0.1:1080'
+git config --global https.proxy 'socks5://127.0.0.1:1080'
+```
+
+### unsetting:
+```
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
+
 hello.go
 ```
 package main
