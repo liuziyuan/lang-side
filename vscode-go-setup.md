@@ -11,7 +11,7 @@ Please ensure that the vscode-go extension is installed on the global path.
 mkdir your_go_workspace
 cd your_go_workspace
 gvm pkgset create --local
-gvm pkgset create --local
+gvm pkgset use --local
 mkdir src
 cd src
 mkdir your_project_name
