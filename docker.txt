@@ -1,0 +1,63 @@
+postgres
+key                            value
+--name                         casemgmt           #container name
+-e POSTGRES_PASSWORD           1qaz2wsx#EDC       #pwd
+-e POSTGRES_USER               postgres           #user name
+-e PGDATA                      /var/lib/postgresql/data/casemgmt  #data file path
+-e POSTGRES_DB                 casemgmt           #db store name
+sudo docker run --restart=always --name casemgmt -e POSTGRES_PASSWORD=1qaz2wsx#EDC -e POSTGRES_USER=postgres -v pgdata:/var/lib/postgresql/data -e POSTGRES_DB=casemgmt -d -p 5432:5432 postgres
+
+main£¨*£©:
+sudo docker run --restart=always --name postgres -e POSTGRES_PASSWORD=1qaz2wsx#EDC -e POSTGRES_USER=postgres -v /var/lib/postgresql/common-data:/var/lib/postgresql/data -d -p 5432:5432 postgres
+
+2:
+docker volume create pg-data
+sudo docker run --restart=always --name postgres -e POSTGRES_PASSWORD=1qaz2wsx#EDC -e POSTGRES_USER=postgres -v pg-data:/var/lib/postgresql/data -d -p 5432:5432 postgres
+
+
+
+redis 
+sudo docker run --restart=always --name redis -v /var/lib/redis/common-data:/data -d -p 6379:6379 redis redis-server --appendonly yes
+
+clients
+sudo docker run -it --link redis:redis --rm redis redis-cli -h redis -p 6379
+
+mysql 
+sudo docker run --restart=always --name mysql -v /var/lib/mysql/common-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=1qaz2wsx#EDC -d -p 3306:3306 mysql
+
+
+tuleap
+sudo docker volume create --name tuleap-data
+
+key                  value
+VIRTUAL_HOST         192.168.10.188
+sudo docker run --restart=always --name tuleap -ti -e VIRTUAL_HOST=192.168.10.188 -d -p 10080:80 -p 443:443 -p 10022:22 -v tuleap-data:/data enalean/tuleap-aio
+
+sudo docker exec -ti tuleap cat /data/root/.tuleap_passwd
+
+/*******************
+Mysql user (root) : hI3UMVPFcS250l3
+Codendiadm unix & DB (codendiadm): hfFfpoxPdMLh04q
+Libnss-mysql DB user (dbauthuser): xMYJ3YgWBgPJnou
+Site admin password (admin): 7nIwje7SPDh1Pui
+root: ZpCWLjidu8DG5EJ
+
+********************/
+
+mail
+
+docker run --rm \
+  -e MAIL_USER=mark.liu@chinasofti.gdc.com \
+  -e MAIL_PASS=1qaz2wsx#EDC \
+  -ti tvial/docker-mailserver:latest \
+  /bin/sh -c 'echo "$MAIL_USER|$(doveadm pw -s SHA512-CRYPT -u $MAIL_USER -p $MAIL_PASS)"' >> config/postfix-accounts.cf
+
+
+gerrit
+
+sudo docker run --restart=always --name gerrit -d -p 18080:8080 -p 29418:29418 -v /var/lib/gerrit:/var/gerrit/review_site openfrontier/gerrit
+
+
+jenkins
+
+sudo docker run --restart=always --name jenkins -d -p 18081:8080 -p 50000:50000 -v /your/home:/var/jenkins_home jenkins
