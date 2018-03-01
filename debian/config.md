@@ -17,6 +17,26 @@ lsb_release -a
 6. `apt-get autoremove`
 7. `apt-get clean`
 
+### install sudo
+1. install sudo
+```
+apt-get install sudo
+```
+2. add authority for sudoers
+```
+chmod +w /etc/sudoers
+```
+3. config sudoers file
+```
+vim /etc/sudoers
+
+username ALL=(ALL) ALL
+```
+4. add authority for sudoers
+```
+chmod -w /etc/sudoers
+```
+
 ### install i3 windown manager
 1. `apt-get install x-window-system-core`
 2. https://i3wm.org/docs/repositories.html
@@ -27,5 +47,6 @@ lsb_release -a
 apt-get install ttf-wqy-zenhei
 apt-get install ttf-wqy-microhei
 apt-get install fonts-wqy
-
 ```
+
+### install zsh, feh etc.
