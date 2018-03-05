@@ -41,6 +41,17 @@ chmod -w /etc/sudoers
 1. `apt-get install x-window-system-core`
 2. https://i3wm.org/docs/repositories.html
 
+### set time zone
+```
+sudo timedatectl set-timezone 'Asia/Shanghai
+```
+
+### vbox addition
+```
+sudo apt-get install build-essential linux-headers-`uname -r`
+
+sudo sh VBoxLinuxAdditions.run
+```
 
 ### install fonts
 ```
