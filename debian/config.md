@@ -106,3 +106,9 @@ interval=30
 
 
 ### install zsh, feh etc.
+
+### install font awesome
+1. downlaod fonts zip, https://fontawesome.com/
+2. unzip file
+3. `mkdir .fonts` at your base home path
+4. `sudo fc-cache -fv .fonts`
