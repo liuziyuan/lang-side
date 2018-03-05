@@ -60,4 +60,19 @@ apt-get install ttf-wqy-microhei
 apt-get install fonts-wqy
 ```
 
+### install fctix pinyin
+```
+apt-get install locales
+sudo dpkg-reconfigure locales
+// zh_CN.UTF-8
+
+sudo apt-get install fcitx fcitx-tools fcitx-config* fcitx-frontend* fcitx-module* fcitx-ui-* presage
+
+sudo apt-get remove fcitx-module-kimpanel
+
+sudo apt-get install fcitx-sunpinyin
+
+reboot
+```
+
 ### install zsh, feh etc.
