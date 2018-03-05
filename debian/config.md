@@ -43,7 +43,7 @@ chmod -w /etc/sudoers
 
 ### set time zone
 ```
-sudo timedatectl set-timezone 'Asia/Shanghai
+sudo timedatectl set-timezone 'Asia/Shanghai'
 ```
 
 ### vbox addition
@@ -74,5 +74,35 @@ sudo apt-get install fcitx-sunpinyin
 
 reboot
 ```
+
+### install i3blocks, https://github.com/vivien/i3blocks
+1. sudo apt-get install i3blocks
+2. custom config 
+`cp /etc/i3blocks.conf ~/.i3blocks.conf `
+3. restart i3
+
+
+### install i3blocks-contrib, https://github.com/vivien/i3blocks-contrib
+1. download from https://github.com/vivien/i3blocks-contrib/releases
+2. tar -xvf i3blocks-contrib-1.4.0.tar.gz
+3. rename forld name and copy to your customized forld
+4. set path on i3 config
+```
+bar {
+        # status_command i3status
+        status_command SCRIPT_DIR=~/i3wm-configs/i3blocks-contrib i3blocks
+}
+```
+5. set .i3blocks.conf, for example:
+```
+[memory]
+command=$SCRIPT_DIR/memory/memory # add this line
+label=MEM
+separator=false
+interval=30
+```
+
+
+
 
 ### install zsh, feh etc.
