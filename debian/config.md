@@ -86,7 +86,7 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 ### install i3blocks, https://github.com/vivien/i3blocks
 1. sudo apt-get install i3blocks
 2. custom config 
-`cp /etc/i3blocks.conf ~/.i3blocks.conf `
+`cp /etc/i3blocks.conf ~/.config/i3blocks/config `
 3. usage
 ```
 bar {
