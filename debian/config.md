@@ -132,4 +132,7 @@ sudo apt-get install gtk2-engines-murrine gtk2-engines-pixbuf libxml2-utils libg
 cd vimix-gtk-themes
 ./Install
 
+git clone https://github.com/vinceliuice/vimix-icon-theme.git
+cd vimix-icon-theme
+./Installer.sh
 ```
