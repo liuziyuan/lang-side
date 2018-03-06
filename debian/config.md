@@ -111,6 +111,7 @@ sudo apt-get install pcmanfm
 sudo apt-get install lxtask
 sudo apt-get install lxmusic
 sudo apt-get install xarchiver
+sudo apt-get install leafpad
 ```
 
 
