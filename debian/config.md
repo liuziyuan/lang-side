@@ -114,6 +114,11 @@ sudo apt-get install xarchiver
 sudo apt-get install leafpad
 ```
 
+### install fonts
+```
+sudo apt-get install fonts-powerline
+```
+
 ### install font awesome
 1. downlaod fonts zip, https://fontawesome.com/
 2. unzip file
