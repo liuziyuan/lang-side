@@ -140,7 +140,7 @@ cd vimix-icon-theme
 ./Installer.sh
 ```
 
-### install zsh oh-my-zsh
+### install zsh oh-my-zsh, http://ohmyz.sh/
 ```
 sudo apt-get install zsh
 chsh -s $(which zsh)
