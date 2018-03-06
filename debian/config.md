@@ -46,7 +46,7 @@ chmod -w /etc/sudoers
 sudo timedatectl set-timezone 'Asia/Shanghai'
 ```
 
-### vbox addition
+### vbox addition, (optional)
 ```
 sudo apt-get install build-essential linux-headers-`uname -r`
 
