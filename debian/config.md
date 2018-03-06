@@ -102,7 +102,12 @@ separator=false
 interval=30
 ```
 
-
+### install lxde system modules
+```
+sudo apt-get install lxappearance
+sudo apt-get install pcmanfm
+sudo apt-get install lxtask
+```
 
 
 ### install zsh, feh etc.
