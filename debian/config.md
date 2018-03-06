@@ -112,3 +112,15 @@ interval=30
 2. unzip file
 3. `mkdir .fonts` at your base home path
 4. `sudo fc-cache -fv .fonts`
+
+
+### install vimix theme
+```
+git clone https://github.com/vinceliuice/vimix-gtk-themes.git
+
+sudo apt-get install gtk2-engines-murrine gtk2-engines-pixbuf libxml2-utils libglib2.0-dev
+
+cd vimix-gtk-themes
+./Install
+
+```
