@@ -114,9 +114,6 @@ sudo apt-get install xarchiver
 sudo apt-get install leafpad
 ```
 
-
-### install zsh, feh etc.
-
 ### install font awesome
 1. downlaod fonts zip, https://fontawesome.com/
 2. unzip file
@@ -136,4 +133,14 @@ cd vimix-gtk-themes
 git clone https://github.com/vinceliuice/vimix-icon-theme.git
 cd vimix-icon-theme
 ./Installer.sh
+```
+
+### install zsh oh-my-zsh
+```
+sudo apt-get install zsh
+chsh -s $(which zsh)
+
+sudo apt-get install curl
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 ```
