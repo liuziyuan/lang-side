@@ -75,6 +75,14 @@ sudo apt-get install fcitx-sunpinyin
 reboot
 ```
 
+### install rofi extension dmenu, (optional)
+```
+sudo apt-get install rofi
+
+# REMOVE (bindsym $mod+d exec dmenu_run) , change to
+bindsym $mod+d exec --no-startup-id rofi -show drun
+```
+
 ### install i3blocks, https://github.com/vivien/i3blocks
 1. sudo apt-get install i3blocks
 2. custom config 
@@ -117,6 +125,7 @@ sudo apt-get install leafpad
 ### install fonts
 ```
 sudo apt-get install fonts-powerline
+sudo apt-get install arc-theme
 ```
 
 ### install font awesome
