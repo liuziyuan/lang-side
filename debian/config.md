@@ -106,7 +106,11 @@ interval=30
 ```
 sudo apt-get install lxappearance
 sudo apt-get install pcmanfm
+
+(optional)
 sudo apt-get install lxtask
+sudo apt-get install lxmusic
+sudo apt-get install xarchiver
 ```
 
 
