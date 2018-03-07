@@ -41,6 +41,24 @@ chmod -w /etc/sudoers
 1. `apt-get install x-window-system-core`
 2. https://i3wm.org/docs/repositories.html
 
+
+### install zsh oh-my-zsh, http://ohmyz.sh/
+```
+sudo apt-get install zsh
+chsh -s $(which zsh)
+
+sudo apt-get install curl
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+```
+
+### set auto start x-windows
+1. For Bash, add the following to the bottom of ~/.bash_profile. If the file does not exist, copy a skeleton version from /etc/skel/.bash_profile. For Zsh, add it to ~/.zprofile. 
+2. cp code to file
+```
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+```
+
 ### set time zone
 ```
 sudo timedatectl set-timezone 'Asia/Shanghai'
@@ -172,12 +190,3 @@ cd vimix-icon-theme
 ./Installer.sh
 ```
 
-### install zsh oh-my-zsh, http://ohmyz.sh/
-```
-sudo apt-get install zsh
-chsh -s $(which zsh)
-
-sudo apt-get install curl
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-```
