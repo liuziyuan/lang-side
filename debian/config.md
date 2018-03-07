@@ -121,6 +121,7 @@ interval=30
 ```
 sudo apt-get install lxappearance
 sudo apt-get install pcmanfm
+sudo apt-get install lxterminal
 
 (optional)
 sudo apt-get install lxtask
