@@ -76,12 +76,27 @@ reboot
 ```
 
 ### install rofi extension dmenu, (optional)
+1. install 
 ```
 sudo apt-get install rofi
+```
+2. config rofi,create a config file at `~/.config/rofi/config`, and add config content
+```
+! Rofi config file
+rofi.combi-modi:    run,drun
+rofi.font:          hack 10
+rofi.modi:          combi
+rofi.location:      1
+rofi.width:         100
+rofi.theme:         ~/.config/rofi/themes/Arc-Dark.rasi
+```
 
-# REMOVE (bindsym $mod+d exec dmenu_run) , change to
+3. update i3 config, REMOVE (bindsym $mod+d exec dmenu_run) , change to
+```
 bindsym $mod+d exec --no-startup-id rofi -show drun
 ```
+
+
 
 ### install i3blocks, https://github.com/vivien/i3blocks
 1. sudo apt-get install i3blocks
