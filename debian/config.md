@@ -196,6 +196,17 @@ apt-get purge linux-image-4.xx.xx-amd64
 apt-get autoremove
 ```
 
+### install polybar
+```
+git clone --branch 3.1.0 --recursive https://github.com/jaagr/polybar
+mkdir polybar/build
+cd polybar/build
+sudo apt-get install python-xcbgen libxcb-icccm4-dev libxcb1-dev xcb-proto libxcb-image0-dev libxcb-randr0-dev libalsaplayer-dev wireless-tools libcurlpp-dev libcairo2-dev libjsoncpp-dev libxcb-util0-dev libxcb-xkb-dev libxcb-ewmh-dev cmake
+
+cmake ..
+sudo make install
+```
+
 ### install application
 http://blog.csdn.net/u010284226/article/details/62037475
 - thefuck https://github.com/nvbn/thefuck
@@ -210,7 +221,7 @@ https://github.com/ivyl/i3-config#general
 https://github.com/jakehamilton/dotfiles
 https://github.com/levinit/i3wm-config
 
-    i3 - window manager
+    i3 - window managerl
     i3status - status bar
     feh - setting bg, also nice image viewer
     urxvt - terminal emulator
