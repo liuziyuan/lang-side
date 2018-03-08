@@ -101,11 +101,14 @@ sudo apt-get install rofi
 2. config rofi,create a config file at `~/.config/rofi/config`, and add config content
 ```
 ! Rofi config file
-rofi.combi-modi:    run,drun
+rofi.modi:          drun,run
+rofi.location:      1
+rofi.columns:       1
+rofi.width:         100
+rofi.drun-icon-theme: Pop
+rofi.show-icons:    true
 rofi.font:          hack 10
 rofi.modi:          combi
-rofi.location:      1
-rofi.width:         100
 rofi.theme:         ~/.config/rofi/themes/Arc-Dark.rasi
 ```
 
