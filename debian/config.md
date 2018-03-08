@@ -203,3 +203,28 @@ http://blog.csdn.net/u010284226/article/details/62037475
 - ranger https://github.com/ranger/ranger
 - mutt http://www.mutt.org/
 - neovim https://github.com/neovim/neovim
+
+https://github.com/da-edra/dotfiles
+https://github.com/clyde80/i3-configuration
+https://github.com/ivyl/i3-config#general
+https://github.com/jakehamilton/dotfiles
+https://github.com/levinit/i3wm-config
+
+    i3 - window manager
+    i3status - status bar
+    feh - setting bg, also nice image viewer
+    urxvt - terminal emulator
+    unclutter - autohide mouse cursor
+    udiskie - device automounting
+    dunst - notifications
+    pulseaudio - audio managment
+    autocutsel - clipboard synchroniation
+    dmenu - Super-P launcher
+    pavucontrol - pulseaudio mixer
+    alsamixer
+
+from xorg
+
+    setxkbmap - setting keyboard layout
+    xmodmap - custom key changes
+
