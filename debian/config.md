@@ -190,3 +190,8 @@ cd vimix-icon-theme
 ./Installer.sh
 ```
 
+### remove old linux images
+```
+apt-get purge linux-image-4.xx.xx-amd64
+apt-get autoremove
+```
