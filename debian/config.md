@@ -196,7 +196,7 @@ apt-get purge linux-image-4.xx.xx-amd64
 apt-get autoremove
 ```
 
-### install polybar
+### install polybar, optional
 ```
 git clone --branch 3.1.0 --recursive https://github.com/jaagr/polybar
 mkdir polybar/build
@@ -205,6 +205,12 @@ sudo apt-get install python-xcbgen libxcb-icccm4-dev libxcb1-dev xcb-proto libxc
 
 cmake ..
 sudo make install
+
+cd  polybar/doc
+install -Dm644 config $HOME/.config/polybar/config
+
+config:
+https://github.com/jaagr/polybar/wiki
 ```
 
 ### install application
