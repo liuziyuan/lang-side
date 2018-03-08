@@ -195,3 +195,11 @@ cd vimix-icon-theme
 apt-get purge linux-image-4.xx.xx-amd64
 apt-get autoremove
 ```
+
+### install application
+http://blog.csdn.net/u010284226/article/details/62037475
+- thefuck https://github.com/nvbn/thefuck
+- cmus https://github.com/cmus/cmus
+- ranger https://github.com/ranger/ranger
+- mutt http://www.mutt.org/
+- neovim https://github.com/neovim/neovim
