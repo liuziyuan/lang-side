@@ -1,7 +1,8 @@
-# Install
+﻿# Install
 https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
-https://www.linuxidc.com/Linux/2017-12/149838.htm
+*https://www.linuxidc.com/Linux/2017-12/149838.htm
 http://blog.csdn.net/r8l8q8/article/details/76516523
+*https://segmentfault.com/a/1190000008280278
 
 先建立一个主分区,下一步绑定/分区，分配大小
 剩下的建立扩展分区，选择全部空间，
@@ -21,3 +22,10 @@ http://blog.csdn.net/r8l8q8/article/details/76516523
     mount/dev/sda1 /mnt
     mkdir/mnt/home
     mount/dev/sda3 /mnt/home
+
+## grub
+
+pacman -S grub
+grub-install /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
+
