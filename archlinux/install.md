@@ -23,6 +23,9 @@ http://blog.csdn.net/r8l8q8/article/details/76516523
     mkdir/mnt/home
     mount/dev/sda3 /mnt/home
 
+# mkinitcpio -p linux 不需要这句话
+
+
 ## grub
 
 pacman -S grub
