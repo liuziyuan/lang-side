@@ -19,3 +19,7 @@ push code to new github project
 6.git push
 ```
 
+
+SSH
+http://blog.csdn.net/u012948710/article/details/23762879
+
