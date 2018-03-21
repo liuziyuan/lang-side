@@ -50,6 +50,10 @@ vscode env setting
 ```
 {
     "python.linting.mypyPath": "/home/liuziyuan/.pyenv/versions/2.7.14/envs/test-2.7.14/lib/python2.7/site-packages",
-    "python.pythonPath": "/home/liuziyuan/.pyenv/versions/2.7.14/envs/test-2.7.14/bin/python2.7"
+    "python.pythonPath": "/home/liuziyuan/.pyenv/versions/2.7.14/envs/test-2.7.14"
 }
 ```
+note: 
+python path: `/home/liuziyuan/.pyenv/versions/2.7.14`
+python virtualenv path: `/home/liuziyuan/.pyenv/versions/2.7.14/envs/test-2.7.14`
+we need to use the virtualenv path
