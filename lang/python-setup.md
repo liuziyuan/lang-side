@@ -16,3 +16,22 @@ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
 step3:
 open a new terminal,and input `pyenv`, if output is right, then you could leran pyenv by https://github.com/pyenv/pyenv
 
+
+http://blog.csdn.net/eric_sunah/article/details/56289937
+
+pyenv + virtualenv
+
+```
+pyenv install -v 2.7.14
+pyenv versions 
+pyenv rehash 
+pyenv virtualenv 2.7.14 tensorflow-2.7.14
+pyenv virtualenvs
+cd /your/path
+pyenv activate tensorflow-2.7.14
+
+pip list
+pip install 'xyz'
+
+pyenv deactivate
+```
