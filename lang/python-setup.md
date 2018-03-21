@@ -44,3 +44,12 @@ pip install 'xyz'
 
 pyenv deactivate
 ```
+
+
+vscode env setting
+```
+{
+    "python.linting.mypyPath": "/home/liuziyuan/.pyenv/versions/2.7.14/envs/test-2.7.14/lib/python2.7/site-packages",
+    "python.pythonPath": "/home/liuziyuan/.pyenv/versions/2.7.14/envs/test-2.7.14/bin/python2.7"
+}
+```
