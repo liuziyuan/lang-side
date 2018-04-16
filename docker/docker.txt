@@ -7,7 +7,7 @@ key                            value
 -e POSTGRES_DB                 casemgmt           #db store name
 sudo docker run --restart=always --name casemgmt -e POSTGRES_PASSWORD=1qaz2wsx#EDC -e POSTGRES_USER=postgres -v pgdata:/var/lib/postgresql/data -e POSTGRES_DB=casemgmt -d -p 5432:5432 postgres
 
-main£¨*£©:
+mainï¿½ï¿½*ï¿½ï¿½:
 sudo docker run --restart=always --name postgres -e POSTGRES_PASSWORD=1qaz2wsx#EDC -e POSTGRES_USER=postgres -v /var/lib/postgresql/common-data:/var/lib/postgresql/data -d -p 5432:5432 postgres
 
 2:
@@ -17,7 +17,11 @@ sudo docker run --restart=always --name postgres -e POSTGRES_PASSWORD=1qaz2wsx#E
 
 
 redis 
+1:
 sudo docker run --restart=always --name redis -v /var/lib/redis/common-data:/data -d -p 6379:6379 redis redis-server --appendonly yes
+2:
+docker volume create redis-data
+sudo docker run --restart=always --name redis -v redis-data:/data -d -p 6379:6379 redis redis-server --appendonly yes
 
 clients
 sudo docker run -it --link redis:redis --rm redis redis-cli -h redis -p 6379

@@ -26,3 +26,8 @@ git branch -r -d origin/branch-name
 git push origin :branch-name
 ```
 
+SSH
+http://blog.csdn.net/u012948710/article/details/23762879
+
+
+
