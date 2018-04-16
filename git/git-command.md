@@ -19,3 +19,10 @@ push code to new github project
 6.git push
 ```
 
+
+delete origin branch
+```
+git branch -r -d origin/branch-name
+git push origin :branch-name
+```
+
