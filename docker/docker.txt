@@ -14,6 +14,8 @@ sudo docker run --restart=always --name postgres -e POSTGRES_PASSWORD=1qaz2wsx#E
 docker volume create pg-data
 sudo docker run --restart=always --name postgres -e POSTGRES_PASSWORD=1qaz2wsx#EDC -e POSTGRES_USER=postgres -v pg-data:/var/lib/postgresql/data -d -p 5432:5432 postgres
 
+sudo docker run --restart=always --name postgres -e POSTGRES_PASSWORD=1qaz2wsx#EDC -e POSTGRES_USER=reverse_auction -v pg-data:/var/lib/postgresql/data -d -p 5432:5432 postgres
+
 
 
 redis 
