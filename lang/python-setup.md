@@ -28,6 +28,8 @@ open a new terminal,and input `pyenv`, if output is right, then you could leran 
 
 http://blog.csdn.net/eric_sunah/article/details/56289937
 
+https://github.com/pyenv/pyenv/wiki/Common-build-problems
+
 pyenv + virtualenv
 
 ```
