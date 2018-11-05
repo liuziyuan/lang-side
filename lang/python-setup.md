@@ -27,6 +27,16 @@ open a new terminal,and input `pyenv`, if output is right, then you could leran 
 
 
 http://blog.csdn.net/eric_sunah/article/details/56289937, for install pyenv virtualenv
+```
+$git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv 
+$echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc 
+$source ~/.zshrc
+--------------------- 
+作者：Eric_aihua 
+来源：CSDN 
+原文：https://blog.csdn.net/eric_sunah/article/details/56289937 
+版权声明：本文为博主原创文章，转载请附上博文链接！
+```
 
 https://github.com/pyenv/pyenv/wiki/Common-build-problems, for fix python compile issue
 
