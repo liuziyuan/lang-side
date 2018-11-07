@@ -22,7 +22,7 @@ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
 
 ```
-step3: (not use)
+step3: 
 open a new terminal,and input `pyenv`, if output is right, then you could leran pyenv by https://github.com/pyenv/pyenv
 
 https://github.com/pyenv/pyenv/wiki/Common-build-problems, for fix python compile issue
