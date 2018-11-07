@@ -22,7 +22,7 @@ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
 
 ```
-step3:
+step3: (not use)
 open a new terminal,and input `pyenv`, if output is right, then you could leran pyenv by https://github.com/pyenv/pyenv
 
 https://github.com/pyenv/pyenv/wiki/Common-build-problems, for fix python compile issue
@@ -56,3 +56,14 @@ note:
 python path: `/home/liuziyuan/.pyenv/versions/2.7.14`
 python virtualenv path: `/home/liuziyuan/.pyenv/versions/2.7.14/envs/test-2.7.14`
 we need to use the virtualenv path
+
+step3:
+python will not support python2, so we will use python venv to replace virtualenv.
+```
+   1. open project forlder
+   2. command: python -m venv .
+   3. source bin/activate
+```
+then , venv will be activate.
+
+https://code.visualstudio.com/docs/python/python-tutorial, this is python turorial at vs code 
