@@ -29,5 +29,11 @@ git push origin :branch-name
 SSH
 http://blog.csdn.net/u012948710/article/details/23762879
 
+push an existing repository from the command line
+```
+git remote add origin https://github.com/liuziyuan/grpc-node.git
+git push -u origin master
+```
+
 
 

@@ -1,0 +1,15 @@
+1. pull consul image
+docker pull consul
+2. create a new node
+docker run -d --name=dev-consul -e CONSUL_BIND_INTERFACE=eth0 consul
+3. look at the address of dev-consul node
+docker exec -t dev-consul consul members
+4. cp and chang -join ip, create 2 nodes, change 172.17.0.4 ip to main node ip 
+docker run -d -e CONSUL_BIND_INTERFACE=eth0 consul agent -dev -join=172.17.0.4
+5. look at nodes
+docker exec -t dev-consul consul members
+6. create consul ui ,chnage 172.17.0.4 ip
+docker run -d -p 8500:8500 --name=dev-consul-client -e CONSUL_BIND_INTERFACE=eth0 -e CONSUL_UI_BETA=true consul agent -retry-join 172.17.0.4 -bind 0.0.0.0 -ui -client 0.0.0.0
+7. access consul ui 
+http://localhost:8500
+
