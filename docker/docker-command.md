@@ -28,6 +28,11 @@ look volume detail info
 sudo docker volume inspect [volume_name]
 ```
 
+look container :
+使用 `docker exec -it  container_id/name  bash` 进入bash
+
+然后使用`cat /etc/hosts`命令查看容器的IP地址
+
  
 本文介绍如何在Arch Linux下安装Docker，及解决下载镜像慢的问题。
 
