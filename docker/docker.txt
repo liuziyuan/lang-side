@@ -31,6 +31,8 @@ sudo docker run -it --link redis:redis --rm redis redis-cli -h redis -p 6379
 mysql 
 sudo docker run --restart=always --name mysql -v /var/lib/mysql/common-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=1qaz2wsx#EDC -d -p 3306:3306 mysql
 
+mariadb
+docker run --name mariadb -v /var/lib/postgresql/common-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=x#EDC -d -p 3306:3306  mariadb
 
 tuleap
 sudo docker volume create --name tuleap-data
